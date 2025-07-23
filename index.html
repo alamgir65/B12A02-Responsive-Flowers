@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/style.css">
+
     <title>Responsive Flowers</title>
+
 </head>
-<body>
-    
+
+<body class="bg-white">
+    <!-- Header section start  -->
+    <header class="px-4 sm:px-30 py-3">
+        <div class="flex justify-between gap-2 sm:hidden">
+            <h1 class="font-bold">9:48</h1>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+        <nav class="flex justify-between mt-5 sm:mt-1">
+            <img src="assets/logo.png" alt="">
+            <ul class="flex gap-5 items-center">
+                <li><a class="px-4 py-2 text-lg hover:font-bold hidden sm:block" href="">Home</a></li>
+                <li><a class="px-4 py-2 text-lg hover:font-bold hidden sm:block" href="">Shop</a></li>
+                <li><a class="px-4 py-2 text-lg hover:font-bold hidden sm:block" href="">About</a></li>
+                <li class="px-4 py-2 text-lg hover:font-bold"><i class="fa-solid fa-cart-arrow-down"></i> Cart($65)</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sm:px-30 py-3 mt-15 flex flex-col-reverse sm:flex-row ">
+        <div class="mt-10 sm:mt-28 px-3 sm:px-0">
+            <h1 class="text-6xl font-bold google-font leading-[70px] mb-3">ALWAYS <span class="text-[var(--primary-color)]">FRESH</span> <br> <span class="text-[var(--primary-color)]">FLOWERS</span></h1>
+            <p class="text-lg opacity-60">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+        </div>
+        <img class="" src="assets/hero-flower.png" alt="">
+    </section>
 </body>
+
 </html>
